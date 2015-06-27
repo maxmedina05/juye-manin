@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Prop
+  - Enemy
+  - GroundChecker
+  - GameGear
+  - Street
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -14,7 +20,7 @@ TagManager:
   - 
   - 
   - Foreground
-  - 
+  - background
   - 
   - 
   - 
@@ -43,7 +49,7 @@ TagManager:
     locked: 0
   - name: background
     uniqueID: 3514394163
-    locked: 0
+    locked: 1
   - name: props
     uniqueID: 3462484035
     locked: 0
