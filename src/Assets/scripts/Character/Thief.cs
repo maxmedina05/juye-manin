@@ -18,10 +18,13 @@ public class Thief : MonoBehaviour {
 
     Animator anim;
     Controllers ThiefController;
+    private Rigidbody2D rigidbody;
+
     void Awake()
     {
         anim = transform.GetComponent<Animator>();
         ThiefController = GameObject.FindGameObjectWithTag(Tags.ThiefController).GetComponent<Controllers>();
+        rigidbody = GetComponent<Rigidbody2D>();
     }
 
 	// Update is called once per frame
@@ -37,24 +40,28 @@ public class Thief : MonoBehaviour {
         //IF CHARACTER CAN JUMP DO IT
 
         IsInGround = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
-        anim.SetFloat("Vspeed", GetComponent<Rigidbody2D>().velocity.y);
+        anim.SetFloat("Vspeed", rigidbody.velocity.y);
         anim.SetBool("ground", IsInGround);
-        if (IsInGround && ThiefController.JumpTime)
-        {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, JmpPwr));
+
+        if (IsInGround && ThiefController.JumpTime){
+
+            //Vector2 velocity = rigidbody.velocity;
+           //rigidbody.velocity = new Vector2(rigidbody.velocity.x, 0);
+            rigidbody.AddForce(new Vector2(0, JmpPwr));
         }
+
     }
 
     void CheckPowerUp() {
         if (transform.position.x >= TopMovement) {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, GetComponent<Rigidbody2D>().velocity.y);
+            rigidbody.velocity = new Vector2(0, rigidbody.velocity.y);
             Vive100On = false;
         }
     }
 
     void OnTriggerEnter2D(Collider2D col) {
         if (col.tag == Tags.Vive100) {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(Speed, GetComponent<Rigidbody2D>().velocity.y);
+            rigidbody.velocity = new Vector2(Speed, rigidbody.velocity.y);
             Vive100On = true;
             Destroy(col.gameObject);
         }

@@ -9,9 +9,15 @@ public class AmetController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update (){
+       //Vector3 position = gameObject.transform.position;
+       // position.x += 100;
+       // gameObject.transform.position = position;
 	}
+
+    void FixedUpdate(){
+
+    }
 
     void OnTriggerEnter2D(Collider2D other) {
 

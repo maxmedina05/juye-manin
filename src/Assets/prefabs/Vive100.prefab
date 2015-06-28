@@ -11,6 +11,8 @@ GameObject:
   - 212: {fileID: 21237866}
   - 61: {fileID: 6118042}
   - 114: {fileID: 11408716}
+  - 114: {fileID: 11491652}
+  - 114: {fileID: 11467354}
   m_Layer: 0
   m_Name: Vive100
   m_TagString: vive100
@@ -55,6 +57,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   world_velocity: 7
+--- !u!114 &11467354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eba679c4ea342547911381e6b729e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amet: {fileID: 0}
+--- !u!114 &11491652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eba679c4ea342547911381e6b729e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amet: {fileID: 119242, guid: 1db44a1decb213945b7de1264c915fc8, type: 2}
 --- !u!212 &21237866
 SpriteRenderer:
   m_ObjectHideFlags: 1

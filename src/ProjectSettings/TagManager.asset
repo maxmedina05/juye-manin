@@ -12,6 +12,7 @@ TagManager:
   - Obstacle
   - vive100
   - houses
+  - Amet
   layers:
   - Default
   - TransparentFX
