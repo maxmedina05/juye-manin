@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 455576}
   - 212: {fileID: 21214102}
   - 114: {fileID: 11477018}
+  - 114: {fileID: 11450286}
   - 60: {fileID: 6033852}
   m_Layer: 0
   m_Name: p-acostado
@@ -49,6 +50,18 @@ PolygonCollider2D:
       - {x: .400000006, y: -.344999999}
       - {x: .400000006, y: -.314999998}
       - {x: -.230000004, y: .344999999}
+--- !u!114 &11450286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da85a5ea8779b304ea0582ee1fb76f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Offset: .200000003
 --- !u!114 &11477018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -60,6 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f792813573b72c4489c215337360538a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world_velocity: 7
 --- !u!212 &21214102
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -84,7 +98,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -832483261
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 82cc7a0727abc4a46b08f2c31508fad9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c1ecea0a2d5a6664d9b0c99a06364f94, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

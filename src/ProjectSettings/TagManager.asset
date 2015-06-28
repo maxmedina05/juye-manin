@@ -10,6 +10,7 @@ TagManager:
   - GameGear
   - Street
   - Obstacle
+  - vive100
   layers:
   - Default
   - TransparentFX
