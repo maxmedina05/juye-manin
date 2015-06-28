@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 497372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundChecker
   m_TagString: GroundChecker
   m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
@@ -30,7 +30,7 @@ GameObject:
   - 58: {fileID: 5816812}
   - 61: {fileID: 6133770}
   - 50: {fileID: 5091632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Thief
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.98000002, y: -.730000019, z: 0}
+  m_LocalPosition: {x: 3.92000008, y: -.730000019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 497372}
@@ -148,6 +148,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   groundCheck: {fileID: 497372}
+  TopMovement: 4
+  Speed: 10
+  Position: 0
+  Vive100On: 0
   JmpPwr: 200
 --- !u!212 &21213342
 SpriteRenderer:

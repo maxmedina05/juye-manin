@@ -24,7 +24,7 @@ public class randomvive : MonoBehaviour {
             Vector3 pos = new Vector3(6.75f, -0.843f, 0);
             GameObject obstacle = Instantiate(viveprefab, pos, Quaternion.identity) as GameObject;
             pertime += 0.2f;
-            time = time * pertime;
+            time = 5f * pertime;
         }
     }
 }
