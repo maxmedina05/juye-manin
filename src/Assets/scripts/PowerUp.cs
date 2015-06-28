@@ -1,29 +1,38 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PowerUp : MonoBehaviour{
+public class PowerUp : MonoBehaviour {
 
     public GameObject amet;
-    public float tope =
-	// Use this for initialization
-	void Start () {
-        amet = GameObject.FindGameObjectWithTag("Amet");
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    AmetController controlamet;
+
+    // Use this for initialization
+    void Start() {
+        amet = GameObject.FindGameObjectWithTag(Tags.amet);
+        controlamet = GameObject.FindGameObjectWithTag(Tags.amet).GetComponent<AmetController>();
+    }
+
+    // Update is called once per frame
+    void Update() {
+
+    }
+
+    void FixedUpdate() {
+
+
+    }
 
     void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Player"){
-            Debug.Log("Go away");
-
-            Vector3 position = amet.transform.position;
-            if (position.x > tope){
-                position.x -= 2f;
-                amet.gameObject.transform.position = position;
-            }
+        if (other.tag == Tags.Player) {
+            controlamet.back = true;
+            //Debug.Log("Go away");
+            //Vector3 position = amet.transform.position;
+            //if (position.x > tope)
+            //{
+            //    position.x -= 40f*Time.deltaTime;
+            //    amet.gameObject.transform.position = position;
+            //}
+           Destroy(gameObject);
         }
     }
 }

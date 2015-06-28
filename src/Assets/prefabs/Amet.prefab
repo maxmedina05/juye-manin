@@ -10,9 +10,12 @@ GameObject:
   - 4: {fileID: 450972}
   - 212: {fileID: 21259420}
   - 95: {fileID: 9524104}
+  - 61: {fileID: 6120474}
+  - 114: {fileID: 11446466}
+  - 114: {fileID: 11447148}
   m_Layer: 8
   m_Name: Amet
-  m_TagString: Untagged
+  m_TagString: Amet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24,11 +27,24 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -139.040009, y: -.660000026, z: -40}
+  m_LocalPosition: {x: -.244000003, y: -.699999988, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6120474
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119242}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .433333337, y: 10}
 --- !u!95 &9524104
 Animator:
   serializedVersion: 3
@@ -46,6 +62,29 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11446466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e79cb82a952e0840b3515c88fe401e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11447148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eba679c4ea342547911381e6b729e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amet: {fileID: 119242}
 --- !u!212 &21259420
 SpriteRenderer:
   m_ObjectHideFlags: 1

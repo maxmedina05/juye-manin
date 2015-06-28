@@ -26,8 +26,6 @@ GameObject:
   - 212: {fileID: 21213342}
   - 95: {fileID: 9527896}
   - 114: {fileID: 11400014}
-  - 58: {fileID: 5818134}
-  - 58: {fileID: 5816812}
   - 61: {fileID: 6133770}
   - 50: {fileID: 5091632}
   m_Layer: 8
@@ -44,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.226999998, y: -.367000014, z: .215000004}
+  m_LocalPosition: {x: .0109999999, y: -.289000005, z: .215000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 497572}
@@ -56,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.92000008, y: -.730000019, z: 0}
+  m_LocalPosition: {x: 1.25, y: -.610000014, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 497372}
@@ -77,32 +75,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!58 &5816812
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165898}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: .239999995, y: -.270000011}
-  serializedVersion: 2
-  m_Radius: .112121642
---- !u!58 &5818134
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165898}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: -.230000004, y: -.270000011}
-  serializedVersion: 2
-  m_Radius: .112121642
 --- !u!61 &6133770
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -113,9 +85,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .0100340843, y: .0521754622}
+  m_Offset: {x: .00248479843, y: -.222900152}
   serializedVersion: 2
-  m_Size: {x: .31994167, y: .405452073}
+  m_Size: {x: .538601398, y: .0899454355}
 --- !u!95 &9527896
 Animator:
   serializedVersion: 3
@@ -148,7 +120,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   groundCheck: {fileID: 497372}
-  TopMovement: 4
+  TopMovement: 2.3900001
   Speed: 10
   Position: 0
   Vive100On: 0

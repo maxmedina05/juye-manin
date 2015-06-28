@@ -11,7 +11,6 @@ GameObject:
   - 114: {fileID: 11405822}
   - 114: {fileID: 11404090}
   - 114: {fileID: 11461404}
-  - 114: {fileID: 11471888}
   m_Layer: 0
   m_Name: _GameGear
   m_TagString: GameGear
@@ -70,19 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viveprefab: {fileID: 158686, guid: 85f2e6882bf9b884a831ea78ac782c64, type: 2}
-  time: 10
---- !u!114 &11471888
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f792813573b72c4489c215337360538a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  world_velocity: 7
+  time: 3
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

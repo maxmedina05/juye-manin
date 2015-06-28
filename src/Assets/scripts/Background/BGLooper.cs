@@ -13,12 +13,17 @@ public class BGLooper : MonoBehaviour {
             case Tags.Street:
                 widthBGCollider = ((BoxCollider2D)collider).size.x;
                 pos.x += widthBGCollider * numBG - 0.14f;
+                collider.transform.position = pos;
                 break;
             case Tags.houses:
                 pos.x += size - 0.14f - 0.68f;
+                collider.transform.position = pos;
+                break;
+            default:
+                Destroy(collider.gameObject);
                 break;
         }
 
-        collider.transform.position = pos;
+       
     }
 }
